@@ -12,15 +12,15 @@ class HomeView extends StatefulWidget {
   final Widget? child;
 
   @override
-  State<HomeView> createState() => _HomeWidgetState();
+  HomeWidgetState createState() => HomeWidgetState();
 }
 
-class _HomeWidgetState extends HomeLogic<HomeView> {
+class HomeWidgetState extends HomeLogic {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Counter: $counter'),
+        Text('$counter'),
         ElevatedButton(
           onPressed: increment,
           child: Text('Increment'),

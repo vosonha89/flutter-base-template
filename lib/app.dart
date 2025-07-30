@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base_template/features/home/presentation/home.dart';
+import 'package:flutter_base_template/features/home/presentation/home.view.dart';
 
 class Application extends StatelessWidget {
   const Application({super.key});

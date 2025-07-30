@@ -1,0 +1,16 @@
+{
+  "name": "flutter-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "flutter run",
+    "build:android-debug": "flutter build apk --debug",
+    "build:ios-debug": "flutter build ios --debug",
+    "test": "flutter test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vosonha89/flutter-base-template.git"
+  },
+  "private": true
+}
