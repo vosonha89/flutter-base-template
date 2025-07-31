@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_base_template/core/components/layout/layout.component.dart';
 import '../domain/home.logic.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({
-    super.key,
-    this.color = const Color(0xFFFFE306),
-    this.child,
-  });
-
-  final Color color;
-  final Widget? child;
+  const HomeView({super.key});
 
   @override
   HomeWidgetState createState() => HomeWidgetState();
@@ -18,12 +12,17 @@ class HomeView extends StatefulWidget {
 class HomeWidgetState extends HomeLogic {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return LayoutComponent(
+      title: 'Home View',
       children: [
-        Text('$counter'),
-        ElevatedButton(
-          onPressed: increment,
-          child: Text('Increment'),
+        Column(
+          children: [
+            Text('$counter', key: Key('counter')),
+            ElevatedButton(
+              onPressed: increment,
+              child: Text('Increment', key: Key('increment')),
+            ),
+          ],
         ),
       ],
     );

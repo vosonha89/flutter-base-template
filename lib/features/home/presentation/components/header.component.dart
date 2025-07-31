@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../../../../core/base/presentation.logic.base.dart';
 
-class HeaderComponent extends StatelessWidget {
+class HeaderComponent extends BaseStatelessLogic {
   final String label;
 
-  const HeaderComponent(this.label, {super.key});
+  HeaderComponent(this.label, {super.key});
 
   @override
   Widget build(BuildContext context) {
