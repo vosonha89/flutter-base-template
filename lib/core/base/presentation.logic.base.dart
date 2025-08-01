@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base_template/core/services/local/logging.service.dart';
+import 'package:flutter_base_template/core/services/local/logging.local.service.dart';
 
 class BaseStatefulLogic<T extends StatefulWidget> extends State<T>  {
   LoggingService loggingService = LoggingService();

@@ -1,5 +1,6 @@
 import 'dart:developer' as developer;
 
+/// Logging local service
 class LoggingService {
   static void debug(String message, {String tag = 'DEBUG'}) {
     developer.log(message, name: tag);
