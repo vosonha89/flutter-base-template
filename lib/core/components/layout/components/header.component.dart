@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/base/presentation.logic.base.dart';
+import 'package:flutter_base_template/core/base/presentation.logic.base.dart';
 
 class HeaderComponent extends BaseStatelessLogic {
   final String label;

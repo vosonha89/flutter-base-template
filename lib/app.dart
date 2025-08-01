@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base_template/features/home/presentation/home.view.dart';
+import 'package:flutter_base_template/core/constants/routes.constant.dart';
+import 'package:flutter_base_template/route.dart';
 
 class Application extends StatelessWidget {
   const Application({super.key});
@@ -10,11 +11,10 @@ class Application extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blueAccent,
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
       ),
-      home: const HomeView(),
+      initialRoute: RouteNames.login,
+      routes: appRoutes,
     );
   }
 }

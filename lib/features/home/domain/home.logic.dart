@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_base_template/core/base/presentation.logic.base.dart';
+import 'package:flutter_base_template/core/constants/routes.constant.dart';
 import 'package:flutter_base_template/features/home/presentation/home.view.dart';
 
 class HomeLogic extends BaseStatefulLogic<HomeView> {
@@ -8,5 +10,9 @@ class HomeLogic extends BaseStatefulLogic<HomeView> {
     setState(() {
       counter++;
     });
+  }
+
+  void goLogin() {
+    Navigator.pushNamed(context, RouteNames.login);
   }
 }

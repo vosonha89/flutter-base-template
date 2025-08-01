@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base_template/core/components/layout/layout.component.dart';
-import '../domain/home.logic.dart';
+import 'package:flutter_base_template/features/home/domain/home.logic.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -21,6 +21,10 @@ class HomeWidgetState extends HomeLogic {
             ElevatedButton(
               onPressed: increment,
               child: Text('Increment', key: Key('increment')),
+            ),
+            ElevatedButton(
+              onPressed: goLogin,
+              child: Text('Go Login', key: Key('goLogin')),
             ),
           ],
         ),

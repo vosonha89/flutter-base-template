@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../features/home/presentation/components/header.component.dart';
+import 'components/header.component.dart';
 import 'layout.logic.dart';
 
 /// A stateful widget that serves as a layout container for child widgets.
