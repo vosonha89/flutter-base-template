@@ -13,9 +13,8 @@ class HomeWidgetState extends HomeLogic {
   @override
   Widget build(BuildContext context) {
     return LayoutComponent(
-      title: 'Home View',
       children: [
-        Column(
+        Row(
           children: [
             Text('$counter', key: Key('counter')),
             ElevatedButton(
@@ -27,6 +26,9 @@ class HomeWidgetState extends HomeLogic {
               child: Text('Go Login', key: Key('goLogin')),
             ),
           ],
+        ),
+        Expanded(
+          child: SingleChildScrollView(child: Text(dataJSON, key: Key('data'))),
         ),
       ],
     );

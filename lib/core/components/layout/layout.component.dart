@@ -34,7 +34,7 @@ class LayoutWidgetState extends LayoutLogic {
         body: Column(
           children: [
             if (widget.title != null) HeaderComponent(widget.title.toString()),
-            Column(children: widget.children),
+            for (var widget in widget.children) widget,
           ],
         ),
       ),

@@ -10,12 +10,6 @@ class SplashView extends StatefulWidget {
 
 class SplashWidgetState extends SplashLogic {
   @override
-  void initState() {
-    super.initState();
-    checkAuthAndNavigate();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(

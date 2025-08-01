@@ -5,6 +5,12 @@ import 'package:flutter_base_template/core/services/local/auth.local.service.dar
 import 'package:flutter_base_template/features/splash/presentation/splash.view.dart';
 
 class SplashLogic extends BaseStatefulLogic<SplashView> {
+  @override
+  void initState() {
+    super.initState();
+    checkAuthAndNavigate();
+  }
+
   Future<void> checkAuthAndNavigate() async {
     await Future.delayed(Duration(seconds: 3)); // Simulate network delay
     final isAuthenticated = await AuthService.instance.isLoggedInAsync();
