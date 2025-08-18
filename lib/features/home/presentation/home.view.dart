@@ -13,6 +13,7 @@ class HomeWidgetState extends HomeLogic {
   @override
   Widget build(BuildContext context) {
     return LayoutComponent(
+      title: 'Home',
       children: [
         Row(
           children: [

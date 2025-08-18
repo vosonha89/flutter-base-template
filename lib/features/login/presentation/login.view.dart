@@ -13,7 +13,6 @@ class LoginWidgetState extends LoginLogic {
   @override
   Widget build(BuildContext context) {
     return LayoutComponent(
-      title: 'Login View',
       children: [
         Column(
           children: [

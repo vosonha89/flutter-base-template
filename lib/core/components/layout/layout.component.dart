@@ -10,10 +10,6 @@ class LayoutComponent extends StatefulWidget {
   final String? title;
   final List<Widget> children;
 
-  /// Creates a LayoutComponent.
-  ///
-  /// The [children] parameter must not be null and contains the widgets
-  /// to be displayed within the layout.
   const LayoutComponent({super.key, this.title, required this.children});
 
   @override
@@ -31,10 +27,20 @@ class LayoutWidgetState extends LayoutLogic {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Column(
+        body: Stack(
           children: [
-            if (widget.title != null) HeaderComponent(widget.title.toString()),
-            for (var widget in widget.children) widget,
+            Column(
+              children: [
+                if (isLoading) Text('21321'),
+                // Container(
+                //   color: Colors.black.withValues(alpha: 0.5),
+                //   child: Center(child: CircularProgressIndicator()),
+                // ),
+                if (widget.title != null)
+                  HeaderComponent(widget.title.toString()),
+                for (var widget in widget.children) widget,
+              ],
+            ),
           ],
         ),
       ),
